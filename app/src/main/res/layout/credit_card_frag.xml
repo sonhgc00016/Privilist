@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/CommonText.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credit_card"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        style="@style/EdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edt_card_num"
+        style="@style/EdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/card_num_hint"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_date"
+            style="@style/EdtStyle.Center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_space"
+            android:layout_weight="1"
+            android:hint="@string/expire_date_hint"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edt_security_code"
+            style="@style/EdtStyle.Center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/security_code_hint"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/BtnStyle.YellowBorder"
+        android:id="@+id/btn_scan"
+        android:text="@string/scan_card"
+        android:layout_marginTop="@dimen/common_space"
+        android:layout_marginBottom="@dimen/common_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/CommonText.Title"
+        android:layout_marginTop="@dimen/common_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"/>
+
+    <EditText
+        android:id="@+id/edt_phone"
+        style="@style/EdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"/>
+
+
+</LinearLayout>

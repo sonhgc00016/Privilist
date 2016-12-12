@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/vg_center"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/book_border">
+
+        <ImageView
+            android:id="@+id/img_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black_alpha50" />
+
+        <LinearLayout
+            android:id="@+id/lnlBookedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked on "
+                android:textAllCaps="true"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/tv_book_date"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 15"
+                android:textAllCaps="true"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" at"
+                android:textAllCaps="true"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/tv_club_name"
+            style="@style/CommonText.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lnlBookedDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="@dimen/common_title_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_club_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_space"
+            android:background="@drawable/btn_yellow_border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/booking_code"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/tv_book_code"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/common_title_text_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.privilist.component.widget.PrivilistTextView
+        style="@style/CommonText.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vg_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="@dimen/common_big_space"
+        android:layout_marginRight="@dimen/common_big_space"
+        android:gravity="center"
+        android:text="@string/book_completed_title"
+        android:textSize="@dimen/common_title_text_size" />
+
+    <Button
+        android:id="@+id/btnReturnToHome"
+        style="@style/BtnStyle.YellowBorder"
+        android:layout_below="@+id/vg_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/common_big_space"
+        android:layout_marginRight="@dimen/common_big_space"
+        android:layout_marginTop="@dimen/common_big_space"
+        android:gravity="center"
+        android:text="@string/return_home" />
+</RelativeLayout>

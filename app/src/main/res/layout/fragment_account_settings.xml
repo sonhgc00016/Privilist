@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/InputTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/signup_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_settings_imgAvatar"
+                android:layout_width="@dimen/profile_imgAvatar_width"
+                android:layout_height="@dimen/profile_imgAvatar_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/profile_imgAvatar_marginBottom"
+                android:layout_marginTop="@dimen/profile_imgAvatar_marginTop"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.privilist.component.widget.PrivilistTextView
+                        style="@style/CommonText.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/firstname_hint" />
+
+                    <com.privilist.component.widget.PrivilistEditText
+                        android:id="@+id/account_settings_edtFirstName"
+                        style="@style/EdtStyle.AccSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/common_space"
+                        android:hint="@string/firstname_hint"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.privilist.component.widget.PrivilistTextView
+                        style="@style/CommonText.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastname_hint" />
+
+                    <com.privilist.component.widget.PrivilistEditText
+                        android:id="@+id/account_settings_edtLastName"
+                        style="@style/EdtStyle.AccSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastname_hint"
+                        android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_hint" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/account_settings_tvDob"
+                style="@style/EdtStyle.Left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/signup_bottom_border"
+                android:hint="@string/age_hint"
+                android:inputType="date"
+                android:paddingBottom="12dp"
+                android:paddingTop="15dp" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/account_settings_tvGender"
+                    style="@style/EdtStyle.Left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/signup_bottom_border"
+                    android:hint="@string/gender"
+                    android:inputType="date"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="15dp" />
+
+                <Switch
+                    android:id="@+id/account_settings_swGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/account_settings_tvGender"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:showText="true"
+                    android:textOff="@string/female"
+                    android:textOn="@string/male"
+                    android:thumb="@android:color/transparent" />
+            </RelativeLayout>
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_hint" />
+
+            <com.privilist.component.widget.PrivilistEditText
+                android:id="@+id/account_settings_edtEmail"
+                style="@style/EdtStyle.AccSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile" />
+
+            <com.privilist.component.widget.PrivilistEditText
+                android:id="@+id/account_settings_edtMobile"
+                style="@style/EdtStyle.AccSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/account_settings_btnChangePassword"
+                style="@style/BtnStyle.YellowBorder"
+                android:text="@string/change_password" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/account_settings_btnSave"
+        style="@style/BtnStyle.Btm"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save_changes" />
+</RelativeLayout>

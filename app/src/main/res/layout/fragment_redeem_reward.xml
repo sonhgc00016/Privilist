@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/redeem_reward_itemTop"
+            layout="@layout/reward_item" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/redeem_reward_itemTop">
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/redeem_reward_tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/redeem_reward_tvDescription_padding" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/redeem_reward_btnRedeem"
+        style="@style/BtnStyle.Btm"
+        android:text="@string/redeem" />
+</FrameLayout>

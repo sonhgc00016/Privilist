@@ -1,0 +1,291 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay"
+    tools:context="com.privilist.frag.profile.ProfileFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rltHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_black">
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/profile_tvClose"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/profile_tvClose_margin"
+                android:text="@string/close"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_medium" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/profile_tvAddBooking"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/profile_tvAddBooking_margin"
+                android:text="@string/add_booking"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_medium" />
+
+            <View
+                android:id="@+id/profile_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/profile_tvClose"
+                android:background="@color/divider_start_color"></View>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/profile_top"
+            layout="@layout/layout_profile_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltHeader"
+            android:layout_marginBottom="20dp"></include>
+
+        <RelativeLayout
+            android:id="@+id/profile_rltUpcommingBooking"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/profile_top"
+            android:background="@drawable/book_border"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/profile_imgUpcommingBooking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_black_alpha50" />
+
+            <LinearLayout
+                android:id="@+id/profile_lnlBookedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.privilist.component.widget.PrivilistTextView
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booked on "
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvBookDate"
+                    style="@style/CommonText.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="July 15"
+                    android:textAllCaps="true"
+                    android:textColor="@color/color_yellow"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <com.privilist.component.widget.PrivilistTextView
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" at"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/common_small_text_size" />
+            </LinearLayout>
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/profile_tvClubName"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_lnlBookedDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/common_title_text_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_tvClubName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_space"
+                android:background="@drawable/btn_yellow_border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
+
+                <com.privilist.component.widget.PrivilistTextView
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/booking_code"
+                    android:textSize="@dimen/common_small_text_size" />
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvBookCode"
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/color_yellow"
+                    android:textSize="@dimen/common_title_text_size" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_rltUpcommingBooking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/gradient_divider"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvBookings"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/bookings"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvReferAFriend"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/refer_a_friends"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvRewards"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/rewards"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvAccountSettings"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/settings"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvPayment"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/abouts"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvContactUs"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/help"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/profile_tvLogout"
+                    style="@style/CommonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/profile_tvItem_padding"
+                    android:text="@string/logout"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/gradient_divider"></View>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

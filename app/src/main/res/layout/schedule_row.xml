@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:weightSum="12"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/right_border"
+        android:paddingTop="@dimen/schedule_padding"
+        android:paddingBottom="@dimen/schedule_padding"
+        android:layout_weight="4">
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/dayTvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CommonText"
+            android:text="Monday"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/schedule_padding"
+        android:paddingBottom="@dimen/schedule_padding"
+        android:layout_weight="8">
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/hourTvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CommonText"
+            android:layout_marginLeft="30dp"
+            android:text="8:00 AM ~ 10:00 PM"
+            />
+    </LinearLayout>
+</LinearLayout>

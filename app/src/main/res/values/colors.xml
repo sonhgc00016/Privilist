@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_black">@android:color/black</color>
+    <color name="color_white">@android:color/white</color>
+    <color name="color_half_white">#7fffffff</color>
+    <color name="color_half_black">#7f000000</color>
+    <color name="color_yellow">#ffbc32</color>
+    <color name="btn_border_color">@color/color_white</color>
+    <color name="btn_text_color">@color/color_white</color>
+    <color name="btm_btn_color">#bd8b25</color>
+    <color name="event_box_color">#ccbd8b25</color>
+    <color name="ads_box_color">@color/color_half_black</color>
+    <color name="divider_start_color">#3c3c3c</color>
+    <color name="divider_end_color">#0f0f0f</color>
+    <color name="color_orange">#ffbc32</color>
+    <color name="color_sliver">#a5a5a5</color>
+    <color name="divider_listview">#292929</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="color_black_alpha50">#7F000000</color>
+    <color name="color_black_alpha80">#CC000000</color>
+    <color name="color_item_table">@color/divider_start_color</color>
+</resources>

@@ -1,0 +1,184 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/color_white</item>
+        <!--<item name="android:colorBackground">@color/background_material_light</item>-->
+        <item name="android:windowBackground">@color/color_black</item>
+    </style>
+
+    <style name="BtnStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="font">@string/font_gotham_medium</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+        <item name="android:background">@drawable/btn_border</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BtnStyle.Btm" parent="BtnStyle">
+        <item name="font">@string/font_gotham_medium</item>
+        <item name="android:background">@drawable/btm_btn_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btm_btn_height</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
+    </style>
+
+    <style name="BtnStyle.YellowBorder" parent="BtnStyle">
+        <item name="font">@string/font_gotham_book</item>
+        <item name="android:background">@drawable/btn_yellow_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btm_btn_height</item>
+    </style>
+
+    <style name="EdtBaseStyle">
+        <item name="font">@string/font_gotham_light</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textColorHint">@color/color_half_white</item>
+        <item name="android:layout_marginTop">@dimen/common_space</item>
+    </style>
+
+    <style name="EdtStyle" parent="EdtBaseStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EdtStyle.Center" parent="EdtStyle">
+        <item name="font">@string/font_gotham_light</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--luanlq July,9 2015-->
+    <style name="EdtStyle.Left" parent="EdtStyle">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:paddingTop">18dp</item>
+    </style>
+    <!--luanlq July,9 2015 End.-->
+    <style name="InputTextContainer">
+        <item name="android:paddingLeft">@dimen/common_big_space</item>
+        <item name="android:paddingRight">@dimen/common_big_space</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:minHeight">@dimen/img_btn_min_size</item>
+        <item name="android:minWidth">@dimen/img_btn_min_size</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="TextInBox">
+        <item name="android:paddingRight">@dimen/text_box_pad_hor</item>
+        <item name="android:paddingLeft">@dimen/text_box_pad_hor</item>
+        <item name="android:paddingBottom">@dimen/text_box_pad_ver</item>
+        <item name="android:paddingTop">@dimen/text_box_pad_ver</item>
+        <item name="font">@string/font_gotham_medium</item>
+    </style>
+
+    <style name="CommonText">
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="font">@string/font_gotham_book</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CommonText.Light" parent="CommonText">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/color_half_white</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+    <!--luanlq July 07,2015-->
+    <style name="club_info">
+        <item name="font">@string/font_gotham_light</item>
+    </style>
+    <!--luanlq July 07,2015 End.-->
+    <!--luanlq Jyly 16,2015-->
+    <style name="club_title">
+        <item name="font">@string/font_gotham_book</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--luanlq Jyly 16,2015 End.-->
+    <style name="CommonText.Title" parent="CommonText">
+        <item name="font">@string/font_gotham_medium</item>
+        <item name="android:textColor">@color/color_yellow</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TittlePageIndicator">
+        <item name="selectedColor">@color/color_yellow</item>
+        <item name="footerIndicatorStyle">none</item>
+        <item name="footerLineHeight">0dp</item>
+        <item name="font">@string/font_gotham_book</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <!--<item name="selectedBold=">true</item>-->
+        <item name="android:textColor">@color/pager_title_text</item>
+    </style>
+
+    <style name="CommonText.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="font">@string/font_gotham_medium</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="EdtStyle.AccSet" parent="EdtStyle">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="EdtStyle.AccSet.ChangePass" parent="EdtStyle.AccSet">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- SonH July 27, 2015 -->
+    <!-- Add Style for transparent Alert Dialog -->
+    <style name="CustomDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <!--<item name="android:textColor">#FFFFFF</item>-->
+        <!--<item name="android:textStyle">normal</item>-->
+        <!--<item name="android:textSize">12sp</item>-->
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+    <!-- SonH July 27, 2015 End. -->
+    <!--luanlq July,27 2015-->
+    <style name="CommonText.Normal">
+        <item name="android:textStyle">normal</item>
+        <item name="font">@string/font_gotham_medium</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+    <!--End.-->
+
+    <!-- SonH August 03, 2015-->
+    <!-- Add style for custom dialog-->
+    <style name="MyCustomDialog" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+        <!-- <item name="android:background">@android:color/transparent</item>
+         <item name="android:colorBackground">@android:color/black</item>-->
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <!-- SonH August 03, 2015 End.-->
+</resources>

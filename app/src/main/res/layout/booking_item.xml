@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/itemBooking_item_height">
+
+    <ImageView
+        android:id="@+id/itemBooking_imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/itemBooking_tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/itemBooking_paddingTop"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/itemBooking_textSizeTit"
+            android:textStyle="bold" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/itemBooking_tvTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="tag"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/itemBooking_textSizeTit"
+            android:textStyle="bold" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/itemBooking_tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Date"
+            android:textAllCaps="true"
+            android:textColor="@color/color_orange"
+            android:textSize="@dimen/itemBooking_textSizeSmall"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

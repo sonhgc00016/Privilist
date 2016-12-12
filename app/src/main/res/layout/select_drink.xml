@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/overlay">
+
+    <ExpandableListView
+        android:id="@+id/lv_drinks"
+        android:layout_marginLeft="@dimen/common_big_space"
+        android:layout_marginRight="@dimen/common_big_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        >
+
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:background="@color/color_white"
+        android:textColor="@color/color_half_black"
+        android:textSize="@dimen/btn_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:minHeight="@dimen/btm_btn_height"/>
+
+    <Button
+        android:id="@+id/btnSelect"
+        style="@style/BtnStyle.Btm"
+        android:text="@string/select"/>
+
+</LinearLayout>

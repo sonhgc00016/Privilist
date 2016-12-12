@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/act_container"
+             android:background="@drawable/background_splash"
+             tools:context="com.privilist.act.SplashAct">
+    <!--luanlq July,23 2015-->
+    <com.privilist.component.widget.PrivilistTextView
+        style="@style/CommonText.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/splash_text_size"
+        android:text="Privilist"/>
+    <!--luanlq July,23 2015 End-->
+</FrameLayout>

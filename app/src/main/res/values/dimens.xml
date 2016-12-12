@@ -1,0 +1,95 @@
+<resources>
+    <dimen name="select_city_list_padding">22dp</dimen>
+    <dimen name="signup_margin">90dp</dimen>
+    <dimen name="splash_text_size">@dimen/introduct_privilist_text_size</dimen>
+    <dimen name="schedule_padding">10dp</dimen>
+    <dimen name="event_description_padding">16dp</dimen>
+    <dimen name="btn_corner_radius">3dp</dimen>
+    <dimen name="btn_border_width">1dp</dimen>
+    <dimen name="common_space">8dp</dimen>
+    <dimen name="common_big_space">32dp</dimen>
+    <dimen name="introduct_pager_top">@dimen/common_big_space</dimen>
+    <dimen name="header_height">44dp</dimen>
+    <dimen name="header_content_inset_left">50dp</dimen>
+    <dimen name="btm_btn_height">44dp</dimen>
+    <dimen name="btn_text_size">14dp</dimen>
+
+    <dimen name="img_btn_min_size">35dp</dimen>
+
+    <!-- Introduct -->
+    <dimen name="introduct_padding_left">35dp</dimen>
+    <dimen name="introduct_privilist_text_size">30sp</dimen>
+    <dimen name="introduct_dont_waste_text_size">16sp</dimen>
+
+    <dimen name="common_title_text_size">18dp</dimen>
+    <dimen name="common_small_text_size">10sp</dimen>
+
+    <dimen name="text_big_size">24sp</dimen>
+    <dimen name="location_item_space">53dp</dimen>
+    <dimen name="event_item_h">188dp</dimen>
+    <dimen name="club_day_indicator_h">56dp</dimen>
+    <dimen name="club_info_h">53dp</dimen>
+    <dimen name="other_special_request_min_h">205dp</dimen>
+    <dimen name="table_title_text_size">@dimen/common_title_text_size</dimen>
+    <dimen name="text_box_size">@dimen/common_small_text_size</dimen>
+    <dimen name="text_box_pad_hor">8dp</dimen>
+    <dimen name="text_box_pad_ver">6dp</dimen>
+    <dimen name="table_sub_text_size">12dp</dimen>
+    <dimen name="table_item_h">110dp</dimen>
+    <dimen name="table_price_size">@dimen/common_title_text_size</dimen>
+
+    <!--Drink-->
+    <dimen name="drink_arrow_h">21dp</dimen>
+    <dimen name="drink_arrow_w">21dp</dimen>
+
+    <!-- Profile -->
+    <dimen name="profile_textSizeNormal">14sp</dimen>
+    <dimen name="profile_textSizeName">18sp</dimen>
+    <dimen name="profile_textSizeAccountType">12sp</dimen>
+    <dimen name="profile_tvClose_margin">15dp</dimen>
+    <dimen name="profile_tvItem_padding">20dp</dimen>
+    <dimen name="profile_tvAddBooking_margin">15dp</dimen>
+    <dimen name="profile_imgAvatar_marginTop">24dp</dimen>
+    <dimen name="profile_imgAvatar_width">100dp</dimen>
+    <dimen name="profile_imgAvatar_height">100dp</dimen>
+    <dimen name="profile_imgCard_width">20dp</dimen>
+    <dimen name="profile_imgCard_height">14dp</dimen>
+    <dimen name="profile_imgAvatar_marginBottom">16dp</dimen>
+    <dimen name="profile_imgArrow_marginLeft">5dp</dimen>
+
+    <!-- Add Booking -->
+    <dimen name="addBooking_margin">20dp</dimen>
+
+    <!-- item Ranking -->
+    <dimen name="itemRanking_imgAvatarSize">40dp</dimen>
+    <dimen name="itemRanking_imgCardHeight">14dp</dimen>
+    <dimen name="itemRanking_imgCardWidth">20dp</dimen>
+
+    <!-- item Bookings -->
+    <dimen name="itemBooking_item_height">188dp</dimen>
+    <dimen name="itemBooking_textSizeTit">18sp</dimen>
+    <dimen name="itemBooking_textSizeSmall">10sp</dimen>
+    <dimen name="itemBooking_paddingTop">50dp</dimen>
+
+    <dimen name="text_size_tiny">8sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+
+    <!-- Rewwards list -->
+    <dimen name="reward_list_available_points_h">80dp</dimen>
+
+    <!-- item Reward -->
+    <dimen name="itemReward_item_h">188dp</dimen>
+
+    <!-- Redeem Reward -->
+    <dimen name="redeem_reward_tvDescription_padding">33dp</dimen>
+
+    <!-- Redeem Success -->
+    <dimen name="redeemSuccess_imgReward_h">188dp</dimen>
+    <dimen name="redeemSuccess_rewardCode_marginTop">15dp</dimen>
+
+    <!-- My Reward item -->
+    <dimen name="itemMyReward_imgReward_h">188dp</dimen>
+    <dimen name="itemMyReward_rewardCode_marginTop">15dp</dimen>
+</resources>

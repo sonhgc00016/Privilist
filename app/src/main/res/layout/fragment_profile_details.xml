@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay"
+    tools:context="com.privilist.frag.profile.profiledetails.ProfileDetailsFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/profile_top"
+            layout="@layout/layout_profile_top"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_black"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradient_divider2"></View>
+
+            <com.viewpagerindicator.TitlePageIndicator
+                android:id="@+id/profileDetails_pager_tab_indicator"
+                style="@style/TittlePageIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.viewpagerindicator.TitlePageIndicator>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient_divider2"></View>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/profileDetails_pager_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</FrameLayout>

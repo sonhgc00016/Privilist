@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/event_des_border"
+        android:orientation="vertical">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_item_h">
+
+            <ImageView
+                android:id="@+id/event_bgrIvw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/event_description_padding"
+                android:paddingRight="@dimen/event_description_padding"
+                android:paddingBottom="@dimen/event_description_padding"
+                >
+
+                <TextView
+                    android:id="@+id/event_tagTvw"
+                    style="@style/TextInBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_space"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_box_size"
+                    />
+
+                <TextView
+                    android:id="@+id/event_titleTvw"
+                    android:layout_marginBottom="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_yellow"
+                    android:textSize="@dimen/text_big_size"
+                    android:textAllCaps="true"
+                    style="@style/club_title"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/event_descTvw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            style="@style/club_info"
+            android:paddingRight="@dimen/event_description_padding"
+            android:paddingLeft="@dimen/event_description_padding"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
+    </LinearLayout>
+</LinearLayout>

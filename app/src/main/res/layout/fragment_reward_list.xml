@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/overlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reward_list_available_points_h"
+        android:background="@color/btm_btn_color">
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/rewards_list_tvAvailable"
+            style="@style/CommonText.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/rewards_list_lvRewards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

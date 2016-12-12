@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/introduct_padding_left" >
+
+    <com.privilist.component.widget.PrivilistTextView
+        android:id="@+id/tv_title"
+        style="@style/CommonText.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduct_dont_waste"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:textSize="@dimen/introduct_dont_waste_text_size" />
+
+    <com.privilist.component.widget.PrivilistTextView
+        style="@style/CommonText"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/common_space"
+        android:text="@string/introduct_dont_waste_des"
+        android:textColor="@color/color_white" />
+
+</LinearLayout>

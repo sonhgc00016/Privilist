@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay"
+    tools:context="com.privilist.frag.profile.AddBookingFrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.privilist.component.widget.PrivilistEditText
+            android:id="@+id/addBooking_edtBookingCode"
+            style="@style/EdtStyle.Center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/addBooking_margin"
+            android:hint="@string/booking_code_hint"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_medium" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            style="@style/CommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/addBooking_margin"
+            android:layout_marginRight="@dimen/addBooking_margin"
+            android:gravity="center"
+            android:text="@string/addbooking_text"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBooking_btnSubmit"
+        style="@style/BtnStyle.Btm"
+        android:text="@string/submit" />
+</FrameLayout>

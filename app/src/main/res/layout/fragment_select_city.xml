@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/overlay"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/select_city_bottom_border"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="SELECT CITY"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/select_city_backImageView"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_return"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="6dp"
+                />
+        </LinearLayout>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/city_resultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:listSelector="@drawable/item_city_selector"
+        android:paddingTop="@dimen/select_city_list_padding"
+        android:paddingBottom="@dimen/select_city_list_padding"
+        >
+
+    </ListView>
+</LinearLayout>

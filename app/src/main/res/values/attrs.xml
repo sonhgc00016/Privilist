@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="font" format="reference"></attr>
+    <attr name="fontStyle" format="enum">
+        <enum name="normal" value="0"></enum>
+        <enum name="bold" value="1"></enum>
+        <enum name="italic" value="2"></enum>
+    </attr>
+    <declare-styleable name="PrivilistTextView">
+        <attr name="font"></attr>
+        <attr name="fontStyle"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PrivilistEditText">
+        <attr name="font"></attr>
+        <attr name="fontStyle"></attr>
+    </declare-styleable>
+</resources>

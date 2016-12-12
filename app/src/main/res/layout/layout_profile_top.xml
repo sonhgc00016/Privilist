@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profile_imgAvatar"
+        android:layout_width="@dimen/profile_imgAvatar_width"
+        android:layout_height="@dimen/profile_imgAvatar_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/profile_imgAvatar_marginBottom"
+        android:layout_marginTop="@dimen/profile_imgAvatar_marginTop"
+        android:padding="2dp"/>
+
+    <com.privilist.component.widget.PrivilistTextView
+        style="@style/CommonText.Bold"
+        android:id="@+id/profile_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_imgAvatar"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_large" />
+
+    <ImageView
+        android:id="@+id/profile_imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_imgAvatar"
+        android:layout_marginLeft="@dimen/profile_imgArrow_marginLeft"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/profile_tvName" />
+
+    <LinearLayout
+        android:id="@+id/profile_llRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_tvName"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/profile_imgRank"
+            android:layout_width="@dimen/profile_imgCard_width"
+            android:layout_height="@dimen/profile_imgCard_height"
+            android:layout_marginRight="@dimen/profile_imgArrow_marginLeft"
+            android:layout_marginTop="5dp" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/profile_tvRank"
+            style="@style/CommonText.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</RelativeLayout>

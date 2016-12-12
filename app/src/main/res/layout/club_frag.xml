@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_item_h">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <com.viewpagerindicator.IconPageIndicator
+            android:id="@+id/pager_images_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/common_space"
+            android:layout_marginRight="@dimen/common_space">
+
+        </com.viewpagerindicator.IconPageIndicator>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/club_info_h"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginRight="@dimen/common_space"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_compass"
+            style="@style/ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_space"
+            android:src="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/img_info"
+            style="@style/ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_space"
+            android:layout_marginRight="@dimen/common_space"
+            android:layout_toLeftOf="@+id/img_compass"
+            android:src="@drawable/info" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@android:id/title"
+            style="@style/CommonText.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/img_info"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/gradient_divider_home"></View>
+        <!--<com.privilist.component.widget.TabIndicator
+            android:id="@+id/pager_days_indicator"
+            android:layout_width="match_parent"
+            style="@style/TittlePageIndicator"
+            android:layout_height="@dimen/club_day_indicator_h"
+            android:layout_marginLeft="@dimen/common_space"
+            android:layout_marginRight="@dimen/common_space"/>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/gradient_divider_home"></View>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_days"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_space"></android.support.v4.view.ViewPager>
+</LinearLayout>

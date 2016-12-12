@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/table_item_h"
+    android:background="@drawable/table_item_bg">
+
+    <com.privilist.component.widget.PrivilistTextView
+        android:id="@+id/tv_table_title"
+        style="@style/CommonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_space"
+        android:textAllCaps="true"
+        android:textColor="@color/color_yellow"
+        android:textSize="@dimen/table_title_text_size" />
+
+    <com.privilist.component.widget.PrivilistTextView
+        android:id="@+id/tv_sold_out"
+        style="@style/TextInBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/common_space"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginRight="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_space"
+        android:background="@drawable/ads_box_border"
+        android:text="@string/sold_out"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_box_size" />
+
+    <com.privilist.component.widget.PrivilistTextView
+        android:id="@+id/tv_guests_num"
+        style="@style/CommonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_table_title"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/color_half_white"
+        android:textSize="@dimen/table_sub_text_size" />
+
+    <com.privilist.component.widget.PrivilistTextView
+        android:id="@+id/tv_price"
+        style="@style/CommonText.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/common_space"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginRight="@dimen/common_space"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/table_price_size"
+        android:textStyle="bold" />
+</RelativeLayout>

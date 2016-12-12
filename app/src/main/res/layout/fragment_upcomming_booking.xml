@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/overlay">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_item_h">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/upcomming_vpImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <com.viewpagerindicator.IconPageIndicator
+            android:id="@+id/upcomming_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/common_space"
+            android:layout_marginRight="@dimen/common_space">
+
+        </com.viewpagerindicator.IconPageIndicator>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/club_info_h"
+        android:layout_marginLeft="@dimen/common_space"
+        android:layout_marginRight="@dimen/common_space"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/upcomming_imgLocation"
+            style="@style/ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_space"
+            android:src="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/upcomming_imgInfo"
+            style="@style/ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_space"
+            android:layout_marginRight="@dimen/common_space"
+            android:layout_toLeftOf="@+id/upcomming_imgLocation"
+            android:src="@drawable/info" />
+
+        <com.privilist.component.widget.PrivilistTextView
+            android:id="@+id/upcomming_tvName"
+            style="@style/CommonText.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/img_info"
+            android:gravity="left|center_vertical"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_listview"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textAllCaps="true"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/upcomming_tvDate"
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.privilist.component.widget.PrivilistTextView
+                        style="@style/CommonText.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_code"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_orange"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.privilist.component.widget.PrivilistTextView
+                        android:id="@+id/upcomming_tvCode"
+                        style="@style/CommonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_large" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnShare"
+                    style="@style/BtnStyle.YellowBorder"
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textSize="@dimen/text_size_small" />
+            </RelativeLayout>
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/table"
+                android:textAllCaps="true"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/upcomming_tvTableType"
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/guests_limit"
+                android:textAllCaps="true"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/upcomming_tvGuestLimit"
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/bottle_service"
+                android:textAllCaps="true"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size_small" />
+
+            <LinearLayout
+                android:id="@+id/upcomming_lnlBottleService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider_listview"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.privilist.component.widget.PrivilistTextView
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.privilist.component.widget.PrivilistTextView
+                    android:id="@+id/upcomming_tvTotal"
+                    style="@style/CommonText.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/divider_listview"></View>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

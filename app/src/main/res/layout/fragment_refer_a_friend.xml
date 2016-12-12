@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/overlay">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_space"
+            android:background="@drawable/btn_yellow_border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/referral_code"
+                android:textSize="@dimen/common_small_text_size" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                android:id="@+id/refer_a_friend_tv_referral_code"
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/common_title_text_size" />
+        </LinearLayout>
+
+        <com.privilist.component.widget.PrivilistTextView
+            style="@style/CommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Refer Privilist to your friends and when they first book a table, both of you will receive $50!"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Credit Available: "
+                android:textSize="@dimen/text_size_small" />
+
+            <com.privilist.component.widget.PrivilistTextView
+                style="@style/CommonText.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$200"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/refer_a_friend_btn_refer"
+        style="@style/BtnStyle.Btm"
+        android:layout_alignParentBottom="true"
+        android:text="@string/refer" />
+</RelativeLayout>
